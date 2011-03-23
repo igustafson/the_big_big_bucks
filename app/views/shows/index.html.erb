@@ -1,0 +1,11 @@
+<h2>Shows</h2>
+
+<% @shows.each do |show| %>
+<h3><%= show.scheduled_for %></h3>
+<%= show.venue_name %><br />
+<%= show.venue_address_1 %><br />
+<%= show.venue_address_2 %><br />
+<%= show.venue_city %>, <%= show.venue_state %> <%= show.venue_postal_code %><br />
+<%= show.price %><br />
+<%= show.info %>
+<% end %>
