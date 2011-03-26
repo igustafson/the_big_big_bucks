@@ -38,5 +38,8 @@ module TheBigBigBucks
 
     # Configure sensitive parameters which will be filtered from the log file.
     config.filter_parameters += [:password]
+
+    # For ActionMailer to create full URLs in emails (clearance)
+    config.action_mailer.default_url_options = {:host => 'thebigbigbucks.com'}
   end
 end
