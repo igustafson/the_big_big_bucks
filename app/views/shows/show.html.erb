@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Scheduled for:</b>
+  <%= @show.scheduled_for %>
+</p>
+
+<p>
+  <b>Venue name:</b>
+  <%= @show.venue_name %>
+</p>
+
+<p>
+  <b>Venue address 1:</b>
+  <%= @show.venue_address_1 %>
+</p>
+
+<p>
+  <b>Venue address 2:</b>
+  <%= @show.venue_address_2 %>
+</p>
+
+<p>
+  <b>Venue city:</b>
+  <%= @show.venue_city %>
+</p>
+
+<p>
+  <b>Venue state:</b>
+  <%= @show.venue_state %>
+</p>
+
+<p>
+  <b>Venue postal code:</b>
+  <%= @show.venue_postal_code %>
+</p>
+
+<p>
+  <b>Price:</b>
+  <%= @show.price %>
+</p>
+
+<p>
+  <b>Info:</b>
+  <%= @show.info %>
+</p>
+
+
+<%= link_to 'Edit', edit_show_path(@show) %> |
+<%= link_to 'Back', shows_path %>
