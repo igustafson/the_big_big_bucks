@@ -10,7 +10,14 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110326043655) do
+ActiveRecord::Schema.define(:version => 20110329051848) do
+
+  create_table "albums", :force => true do |t|
+    t.string   "title"
+    t.datetime "released_at"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "shows", :force => true do |t|
     t.datetime "scheduled_for"
