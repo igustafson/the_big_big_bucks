@@ -1,0 +1,12 @@
+<div class="show">
+  <p class="date"><%= show_date(show) %></p>
+  <p class="venue_name"><%= show.venue_name %></p>
+  <% if show.venue_address_1 %><p class="venue_address_1"><%= show.venue_address_1 %></p><% end %>
+  <% if show.venue_address_2 %><p class="venue_address_2"><%= show.venue_address_2 %></p><% end %>
+  <% if show.venue_city %><p class="venue_city"><%= show.venue_city %></p><% end %>
+  <% if show.venue_state %><p class="venue_state"><%= show.venue_state %></p><% end %>
+  <% if show.venue_postal_code %><p class="venue_postal_code"><%= show.venue_postal_code %></p><% end %>
+  <p class="time"><%= show_time(show) %></p>
+  <% if show.price %><p class="price"><%= show_price(show) %></p><% end %>
+  <% if show.info %><p class="info"><%= show.info %></p><% end %>
+</div>

@@ -1,39 +1,5 @@
-<h1>Listing shows</h1>
+<h1>Shows</h1>
 
-<table>
-  <tr>
-    <th>Scheduled for</th>
-    <th>Venue name</th>
-    <th>Venue address 1</th>
-    <th>Venue address 2</th>
-    <th>Venue city</th>
-    <th>Venue state</th>
-    <th>Venue postal code</th>
-    <th>Price</th>
-    <th>Info</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @shows.each do |show| %>
-  <tr>
-    <td><%= show.scheduled_for %></td>
-    <td><%= show.venue_name %></td>
-    <td><%= show.venue_address_1 %></td>
-    <td><%= show.venue_address_2 %></td>
-    <td><%= show.venue_city %></td>
-    <td><%= show.venue_state %></td>
-    <td><%= show.venue_postal_code %></td>
-    <td><%= show.price %></td>
-    <td><%= show.info %></td>
-    <td><%= link_to 'Show', show %></td>
-    <td><%= link_to 'Edit', edit_show_path(show) %></td>
-    <td><%= link_to 'Destroy', show, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
-</table>
-
-<br />
+<%= render @shows %>
 
 <%= link_to 'New Show', new_show_path %>

@@ -5,3 +5,38 @@ div.notice {
 div.failure {
   color: red;
 }
+
+/* Shows */
+div.show {
+  margin-bottom: 1em;
+}
+
+div.show p {
+  margin: 0;
+  margin-right: 0.5em;
+}
+
+div.show p.date {
+  float: left;
+}
+
+div.show p.venue_name:before {
+  content: "@";
+}
+
+div.show p.venue_city,
+div.show p.venue_state {
+  float: left;
+}
+
+div.show p.venue_city:after {
+  content: ",";
+}
+
+div.show p.time {
+  float: left;
+}
+
+div.show p.time:after {
+  content: ",";
+}
