@@ -1,3 +1,7 @@
 div.notice {
   color: green;
 }
+
+div.failure {
+  color: red;
+}
