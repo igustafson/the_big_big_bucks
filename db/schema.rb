@@ -19,6 +19,20 @@ ActiveRecord::Schema.define(:version => 20110329051848) do
     t.datetime "updated_at"
   end
 
+  create_table "shows", :force => true do |t|
+    t.datetime "scheduled_for"
+    t.string   "venue_name"
+    t.string   "venue_address_1"
+    t.string   "venue_address_2"
+    t.string   "venue_city"
+    t.string   "venue_state"
+    t.string   "venue_postal_code"
+    t.float    "price"
+    t.text     "info"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "users", :force => true do |t|
     t.string   "email"
     t.string   "encrypted_password", :limit => 128
