@@ -29,6 +29,7 @@ GEM
       activesupport (= 3.0.5)
     activesupport (3.0.5)
     arel (2.0.9)
+    awesome_print (0.3.2)
     builder (2.1.2)
     clearance (0.10.3.2)
       diesel (~> 0.1.4)
@@ -74,6 +75,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  awesome_print
   clearance
   mysql2
   rails (= 3.0.5)
