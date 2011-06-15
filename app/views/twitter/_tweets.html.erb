@@ -1,0 +1,3 @@
+<% @tweets.each do |tweet| %>
+<%= render :partial => 'twitter/tweet', :locals => {:tweet => tweet} %>
+<% end %>
