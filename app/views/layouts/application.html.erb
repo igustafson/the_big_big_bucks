@@ -2,24 +2,35 @@
 <html>
 <head>
   <title>The Big Big Bucks</title>
-  <%= stylesheet_link_tag :all %>
   <%= stylesheet_link_tag 'http://yui.yahooapis.com/2.8.2r1/build/reset/reset-min.css' %>
   <%= stylesheet_link_tag 'http://yui.yahooapis.com/2.8.2r1/build/fonts/fonts-min.css' %>
-  <%= stylesheet_link_tag 'http://yui.yahooapis.com/2.8.2r1/build/base/base-min.css' %>
+  <%= stylesheet_link_tag :all %>
   <%= javascript_include_tag :defaults %>
   <%= csrf_meta_tag %>
 </head>
 <body>
-  <div id="header">
-    <% if signed_in? -%>
-      <%= link_to "Sign out", sign_out_path, :method => :delete %>
-    <% else -%>
-      <%= link_to "Sign in", sign_in_path %>
+  <div id="content">
+    <div id="header">
+      <% if signed_in? -%>
+        <%= link_to "Sign out", sign_out_path, :method => :delete %>
+      <%# else -%>
+        <%#= link_to "Sign in", sign_in_path %>
+      <% end -%>
+    </div>
+    <% flash.each do |key, value| -%>
+      <div class="flash <%= key %>"><%=h value %></div>
     <% end -%>
+    <h1><span class="the">The</span>
+    <span class="big">Big</span>
+    <span class="big">Big</span>
+    <span class="bucks">Bucks</span></h1>
+
+    <%= yield %>
+
+    <div id="footer">
+      <%= render 'twitter/follow' %>
+      <%= render 'facebook/like' %>
+    </div>
   </div>
-  <% flash.each do |key, value| -%>
-    <div class="flash <%= key %>"><%=h value %></div>
-  <% end -%>
-  <%= yield %>
 </body>
 </html>

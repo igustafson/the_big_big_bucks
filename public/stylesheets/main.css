@@ -1,9 +1,49 @@
+/* Layout */
+html {
+  background-color: #6D7B8D;
+}
+
+#content {
+  width: 974px;
+  margin: auto;
+  background-color: #6D7B8D;
+}
+
 div.notice {
   color: green;
 }
 
 div.failure {
   color: red;
+}
+
+h1 {
+  font-size: 125px;
+  color: #C9C299;
+  text-align: center;
+}
+
+h1 span.big {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+h1 span.the + span.big {
+  position: relative;
+  top: -10px;
+  color: #FAAFBA;
+}
+
+h1 span.big + span.big {
+  position: relative;
+  top: 10px;
+  margin-left: -1.7em;
+  color: #B5EAAA;
+}
+
+/* Footer */
+iframe.twitter-follow-button {
+  width: 61px;
 }
 
 /* Shows */
