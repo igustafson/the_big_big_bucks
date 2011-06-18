@@ -9,6 +9,10 @@
   <%= csrf_meta_tag %>
 </head>
 <body>
+  <h1><span class="the">The</span>
+  <span class="big">Big</span>
+  <span class="big">Big</span>
+  <span class="bucks">Bucks</span></h1>
   <div id="content">
     <div id="header">
       <% if signed_in? -%>
@@ -20,10 +24,6 @@
     <% flash.each do |key, value| -%>
       <div class="flash <%= key %>"><%=h value %></div>
     <% end -%>
-    <h1><span class="the">The</span>
-    <span class="big">Big</span>
-    <span class="big">Big</span>
-    <span class="bucks">Bucks</span></h1>
 
     <%= yield %>
 

@@ -1,3 +1,6 @@
-<% @tweets.each do |tweet| %>
-<%= render :partial => 'twitter/tweet', :locals => {:tweet => tweet} %>
-<% end %>
+<div id="tweets">
+  <h2>Recent Tweets</h2>
+  <% @tweets.each do |tweet| %>
+  <%= render :partial => 'twitter/tweet', :locals => {:tweet => tweet} %>
+  <% end %>
+</div>
