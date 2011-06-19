@@ -66,6 +66,16 @@ iframe.twitter-follow-button {
   background-color: #B5EAAA;
 }
 
+#tweets .tweet {
+  margin-bottom: 1em;
+  word-wrap: break-word;
+}
+
+#tweets p.created_at {
+  font-size: 11px;
+  color: #666;
+}
+
 /* Shows */
 #shows {
   width: 200px;
@@ -78,15 +88,24 @@ iframe.twitter-follow-button {
 
 div.show {
   margin-bottom: 1em;
+  word-wrap: break-word;
 }
 
 div.show p {
   margin: 0;
-  margin-right: 0.5em;
+  font-size: 11px;
+  color: #666;
 }
 
 div.show p.date {
   float: left;
+  font-size: 13px;
+  color: #333;
+}
+
+div.show p.venue_name {
+  font-size: 13px;
+  color: #333;
 }
 
 div.show p.venue_name:before {
