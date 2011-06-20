@@ -4,6 +4,7 @@ html {
 }
 
 #content {
+  position: relative;
   width: 974px;
   margin: auto;
   color: #333;
@@ -60,14 +61,18 @@ h2 {
 }
 
 #sidebar {
+  position: absolute;
   width: 200px;
-  float: left;
   margin-right: 1em;
 }
 
 #sidebar h2 {
   text-align: center;
   color: #8A9CB3;
+}
+
+#main_section {
+  margin-left: 213px;
 }
 
 #main_section p {
@@ -158,10 +163,21 @@ div.show p.time:after {
 
 .blog_post {
   margin-bottom: 1.5em;
+  clear: both;
 }
 
 .blog_post p.created_at {
   margin-top: 0.5em;
   font-size: 11px;
   color: #666;
+}
+
+img.wrapped_left {
+  float: left;
+  margin-right: 1em;
+}
+
+img.wrapped_right {
+  float: right;
+  margin-left: 1em;
 }
