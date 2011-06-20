@@ -1,0 +1,7 @@
+<% @blog_posts.each do |post| %>
+<div class="blog_post">
+  <h2><%= post.title %></h2>
+  <%= post.content.html_safe %>
+  <p class="created_at"><%= datetime_string(post.published) %></p>
+</div>
+<% end %>
