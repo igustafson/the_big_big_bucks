@@ -150,23 +150,6 @@ div.show p.venue_name:before {
   content: "@";
 }
 
-div.show p.venue_city,
-div.show p.venue_state {
-  float: left;
-}
-
-div.show p.venue_city:after {
-  content: ",";
-}
-
-div.show p.time {
-  float: left;
-}
-
-div.show p.time:after {
-  content: ",";
-}
-
 /* Contact */
 
 #contact {
