@@ -11,7 +11,8 @@ html {
 }
 
 div.notice,
-div.failure {
+div.failure,
+div.success {
   padding: 0.5em;
   margin-bottom: 1em;
   border-radius: 20px;
@@ -19,6 +20,7 @@ div.failure {
   text-align: center;
 }
 
+div.success,
 div.notice {
   color: green;
   background-color: #B5EAAA;
