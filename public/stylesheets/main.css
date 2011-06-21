@@ -8,15 +8,25 @@ html {
   width: 974px;
   margin: auto;
   color: #333;
-  background-color: #8A9CB3;
+}
+
+div.notice,
+div.failure {
+  padding: 0.5em;
+  margin-bottom: 1em;
+  border-radius: 20px;
+  -moz-border-radius: 20px;
+  text-align: center;
 }
 
 div.notice {
   color: green;
+  background-color: #B5EAAA;
 }
 
 div.failure {
   color: red;
+  background-color: #FAAFBA;
 }
 
 a {
