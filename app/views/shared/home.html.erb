@@ -1,7 +1,13 @@
 <div id="sidebar">
+  <div class="social_buttons">
+    <%= render 'twitter/follow' %>
+    <%= render 'facebook/like' %>
+  </div>
   <%= render 'twitter/tweets' %>
   <%= render 'shows/shows' %>
+  <%= render 'shared/contact' %>
 </div>
 <div id="main_section">
+  <%= render 'shared/navigation' %>
   <%= render 'blog/posts' %>
 </div>
