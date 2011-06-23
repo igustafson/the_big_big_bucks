@@ -32,14 +32,12 @@ div.failure {
 }
 
 a {
-  color: #B5EAAA;
+  color: #CE1D25;
   text-decoration: none;
-  font-weight: bold;
-  text-shadow: 1px 1px 0px #FAAFBA;
 }
 
 a:hover {
-  text-shadow: 2px 2px 0px #FAAFBA;
+  color: #FF4048;
 }
 
 h1 {
@@ -185,6 +183,16 @@ div.show p.venue_name:before {
 #navigation li {
   display: inline;
   margin-left: 2.5em;
+}
+
+#navigation a {
+  color: #B5EAAA;
+  text-shadow: 1px 1px 0px #FAAFBA;
+  font-weight: bold;
+}
+
+#navigation a:hover {
+  text-shadow: 2px 2px 0px #FAAFBA;
 }
 
 /* Blog Posts */
