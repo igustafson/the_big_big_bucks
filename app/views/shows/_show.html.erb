@@ -3,7 +3,7 @@
   <p class="venue_name"><%= show.venue_name %></p>
   <% if show.venue_address_1 %><p class="venue_address_1"><%= show.venue_address_1 %></p><% end %>
   <% if show.venue_address_2 %><p class="venue_address_2"><%= show.venue_address_2 %></p><% end %>
-  <p class="venue_city"><% if show.venue_city %><%= show.venue_city %>, <% end %><% if show.venue_state %><%= show.venue_state %> <% end %><% if show.venue_postal_code %><%= show.venue_postal_code %><% end %></p>
+  <p class="venue_city"><% if !show.venue_city.blank? %><%= show.venue_city %>, <% end %><% if show.venue_state %><%= show.venue_state %> <% end %><% if show.venue_postal_code %><%= show.venue_postal_code %><% end %></p>
   <p class="time_price"><%= show_time(show) %> <% if show.price %><%= show_price(show) %><% end %></p>
   <% if show.info %><p class="info"><%= show.info %></p><% end %>
 </div>
