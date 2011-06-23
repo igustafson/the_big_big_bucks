@@ -124,6 +124,10 @@ iframe.twitter-follow-button ~ iframe{
   color: #666;
 }
 
+#twitter_link {
+  text-align: center;
+}
+
 /* Shows */
 #shows {
   padding: 1em;
