@@ -202,7 +202,6 @@ div.show p.venue_name:before {
 .blog_post p.created_at {
   clear: both;
   margin-top: 1em;
-  font-size: 11px;
   text-align: left;
   color: #666;
 }
