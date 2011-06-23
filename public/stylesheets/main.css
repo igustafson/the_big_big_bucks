@@ -118,11 +118,11 @@ iframe.twitter-follow-button ~ iframe{
 
 #tweets .tweet {
   margin-bottom: 1em;
+  font-size: 11px;
   word-wrap: break-word;
 }
 
 #tweets p.created_at {
-  font-size: 11px;
   color: #666;
 }
 
@@ -143,19 +143,16 @@ div.show {
 div.show p {
   margin: 0;
   font-size: 11px;
-  color: #666;
 }
 
 div.show p.date {
   float: left;
   margin-right: 0.5em;
-  font-size: 13px;
-  color: #333;
+  font-weight: bold;
 }
 
 div.show p.venue_name {
-  font-size: 13px;
-  color: #333;
+  font-weight: bold;
 }
 
 div.show p.venue_name:before {
