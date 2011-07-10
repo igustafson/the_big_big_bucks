@@ -32,8 +32,9 @@ div.failure {
 }
 
 a {
-  color: #CE1D25;
+  color: #FAAFBA;
   text-decoration: none;
+  text-shadow: 1px 1px 0px #666;
 }
 
 a:hover {
@@ -75,7 +76,7 @@ h2 {
 
 #sidebar {
   position: absolute;
-  width: 200px;
+  width: 220px;
   margin-right: 1em;
 }
 
@@ -84,13 +85,17 @@ h2 {
   color: #8A9CB3;
 }
 
+#sidebar a {
+  text-shadow: none;
+}
+
 #sidebar div.social_buttons {
   margin-bottom: 1em;
   text-align: center;
 }
 
 #main_section {
-  margin-left: 226px;
+  margin-left: 246px;
 }
 
 #main_section p {
@@ -107,39 +112,71 @@ iframe.twitter-follow-button ~ iframe{
 
 /* Tweets */
 #tweets {
-  padding: 1em;
+  padding: 1.5em;
   margin-bottom: 1em;
   border-radius: 20px;
   -moz-border-radius: 20px;
   background-color: #B5EAAA;
 }
 
-#tweets .tweet {
+#tweets div {
+  padding: 0!important;
+}
+
+#tweets a {
+  color: #4a1555;
+}
+
+#tweets a:hover {
+  text-decoration: underline;
+}
+
+.twtr-hd {
   margin-bottom: 1em;
+}
+
+.twtr-widget .twtr-tweet {
+  border-bottom-width: 0!important;
+  margin-bottom: 1em;
+}
+
+.twtr-widget .twtr-tweet:last-child {
+  margin-bottom: 0;
+}
+
+div.twtr-tweet-text p {
   font-size: 11px;
   word-wrap: break-word;
 }
 
-#tweets p.created_at {
-  color: #666;
-}
-
-#twitter_link {
-  text-align: center;
+.twtr-ft {
+  display: none!important;
 }
 
 /* Shows */
 #shows {
-  padding: 1em;
+  padding: 1.5em;
   margin-bottom: 1em;
   border-radius: 20px;
   -moz-border-radius: 20px;
   background-color: #C9C299;
 }
 
+#shows a {
+  color: #363d66;
+}
+
+#shows a:hover {
+  text-decoration: underline;
+}
+
 div.show {
   margin-bottom: 1em;
   word-wrap: break-word;
+}
+
+div.show:last-child {
+  margin-bottom: 0;
 }
 
 div.show p {
@@ -178,6 +215,7 @@ div.show p.venue_name:before {
   padding: 0.5em 2em;
   margin-bottom: 1em;
   margin-left: -1em;
+  font-size: 15px;
   border-radius: 20px;
   -moz-border-radius: 20px;
   text-align: right;
