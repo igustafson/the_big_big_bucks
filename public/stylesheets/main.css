@@ -269,16 +269,23 @@ div.show p.venue_name:before {
   color: #666;
 }
 
+img.wrapped_left,
+img.wrapped_right {
+  max-width: 250px;
+  margin-bottom: 0.75em;
+  -moz-box-shadow: 3px 3px 10px #363636;
+  -webkit-box-shadow: 3px 3px 10px #363636;
+  box-shadow: 3px 3px 10px #363636;
+}
+
 img.wrapped_left {
   float: left;
   margin-right: 1.5em;
-  max-width: 250px;
 }
 
 img.wrapped_right {
   float: right;
   margin-left: 1.5em;
-  max-width: 250px;
 }
 
 .blog_post a[href^="http://feeds.wordpress.com/1.0/"] {
