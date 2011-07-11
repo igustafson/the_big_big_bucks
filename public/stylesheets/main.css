@@ -94,8 +94,14 @@ h2 {
   text-align: center;
 }
 
+div.plusone_button {
+  display: inline-block;
+  margin-right: 0.5em;
+}
+
 iframe.twitter-follow-button {
   width: 61px;
+  margin-right: 0.5em;
 }
 
 #main_section {
