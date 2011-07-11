@@ -94,20 +94,16 @@ h2 {
   text-align: center;
 }
 
+iframe.twitter-follow-button {
+  width: 61px;
+}
+
 #main_section {
   margin-left: 246px;
 }
 
 #main_section p {
   margin-bottom: 1em;
-}
-
-iframe.twitter-follow-button {
-  width: 61px;
-}
-
-iframe.twitter-follow-button ~ iframe{
-  width: 150px;
 }
 
 /* Tweets */
