@@ -41,6 +41,12 @@ a:hover {
   color: #FF4048;
 }
 
+#feed_link {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+
 h1 {
   font-size: 135px;
   color: #C9C299;
