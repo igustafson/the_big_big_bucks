@@ -1,6 +1,6 @@
 module ShowsHelper
   def show_date(show)
-    date_string(show.scheduled_for)
+    date_string(show.scheduled_for, '%m/%d')
   end
 
   def show_time(show)

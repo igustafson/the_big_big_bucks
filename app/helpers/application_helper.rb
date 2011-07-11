@@ -1,12 +1,12 @@
 module ApplicationHelper
-  def date_string(datetime)
+  def date_string(datetime, format='%m/%d/%Y')
     datetime = Time.parse(datetime) if datetime.is_a? String
-    datetime.strftime('%m/%d/%Y')
+    datetime.strftime(format)
   end
 
-  def time_string(datetime)
+  def time_string(datetime, format='%I:%M%p')
     datetime = Time.parse(datetime) if datetime.is_a? String
-    datetime.strftime('%I:%M%p')
+    datetime.strftime(format)
   end
 
   def datetime_string(datetime)
