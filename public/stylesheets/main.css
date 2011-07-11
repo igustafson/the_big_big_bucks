@@ -243,19 +243,28 @@ div.show p.venue_name:before {
 
 /* Blog Posts */
 
-.blog_post {
-  margin-bottom: 1.5em;
+#main_section .blog_post {
+  margin-bottom: 16px;
+  border-bottom: dotted 2px #6B7F99;
   clear: both;
 }
 
-.blog_post p {
+#main_section .blog_post:last-child {
+  border-bottom: none;
+}
+
+#main_section .blog_post p {
   text-align: justify;
   line-height: 1.4;
 }
 
-.blog_post p.created_at {
+#main_section .blog_post p:last-child {
+  margin-bottom: 0;
+}
+
+#main_section .blog_post p.created_at {
   clear: both;
-  margin-top: 1em;
+  margin-bottom: 18px;
   text-align: left;
   color: #666;
 }
@@ -270,4 +279,12 @@ img.wrapped_right {
   float: right;
   margin-left: 1.5em;
   max-width: 250px;
+}
+
+.blog_post a[href^="http://feeds.wordpress.com/1.0/"] {
+  display: none;
+}
+
+.blog_post p + br {
+  display: none;
 }
