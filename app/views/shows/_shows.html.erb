@@ -1,4 +1,8 @@
 <div id="shows">
   <h2>Upcoming Shows</h2>
+  <% if @shows.empty? %>
+  <p class="no_shows">No upcoming shows.</p>
+  <% else %>
   <%= render @shows %>
+  <% end %>
 </div>

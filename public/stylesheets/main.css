@@ -180,6 +180,10 @@ div.twtr-tweet-text p {
   text-decoration: underline;
 }
 
+#shows p.no_shows {
+  font-style: italic;
+}
+
 div.show {
   margin-bottom: 1.25em;
   word-wrap: break-word;
