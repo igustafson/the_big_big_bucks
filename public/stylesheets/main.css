@@ -181,6 +181,7 @@ div.twtr-tweet-text p {
 }
 
 #shows p.no_shows {
+  text-align: center;
   font-style: italic;
 }
 
